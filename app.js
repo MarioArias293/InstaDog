@@ -21,7 +21,7 @@ const handleImage = src => {
     document.querySelector("#am").appendChild(newDiv)
 }
 
-const images = new Array(6)
+const images = new Array(9)
 
 for (let i = 0; i < images.length; i++) {
     images[i] = linkDog();

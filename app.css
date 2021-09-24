@@ -1,10 +1,7 @@
 
-.container {
-    display: inline;
-}
 #profile img  {
     border-radius: 50%;
-    border: 1px  rgb(206, 46, 46);
+    border: 1px  rgb(199, 182, 182);
     border-style: solid;
     width: 5em;
     height: 5em;
@@ -45,21 +42,33 @@
 }
 
 #header  {
+    width: 100%;
     display: flex;
-    justify-content:space-around;
-    padding-left: 0;
-    padding-right: 0;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    align-items:flex-start;
+    justify-content: center;
     border-bottom-color: rgb(230, 230, 230);
     border-width: 1px;
     border-bottom-style: solid;
-    background-color: white
+    background-color: white;
+    position: fixed;
 }
 
 #header img:nth-of-type(1){
     padding-left: 0
+    width 100px;
+    height: 50%;
+}
+
+#realhd {
+    width: 75%;
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 1px;
+    padding-top: 5px;
+    align-items: center;
+    
+    width: 75%;
 }
 
 input {
@@ -88,25 +97,31 @@ input {
 #profile  {
     display: flex;
     flex-direction: row;
-    justify-content:space-evenly;
+    justify-content:center;
     padding-top: 30px ;
     padding-bottom: 25px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 100px;
+
     align-items:stretch;
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
     font-size: 28px;
     line-height: 18px;
     background-color: rgb(247, 247, 247);
     overflow: auto;
+    width: 75%;
+    margin: auto;
+    padding-top: 100px;
 
 
 }
 
-#profile div:nth-of-type(1) {
-    flex-grow: 0.1;
+#imgprofile {
+    
     justify-content: center;
     align-items:flex-end;
+    margin-left: 4%;
+    margin-right: 10%;
+    
 
     
 }
@@ -132,6 +147,10 @@ input {
 #profile li {
     padding-right: 25px;
     justify-content: left;
+}
+
+#header a {
+    text-decoration: none;
 }
 
 .photos {
@@ -185,26 +204,35 @@ font-weight: lighter;
     background-color: rgb(247, 247, 247);
     text-align: center;
     border-color: lightgrey;
-    
+
+}
+
+.container {
+    flex: auto;
+    flex-wrap: wrap;
 }
 
 #am {
+    flex: auto;
     width: 75%;
     align-items: center;
     justify-content: center;
     margin: auto;
-    min-width: 1200px;
+    padding-bottom: 25px;
+    
 
 }
 
 #moreDiv{
     display: flex;
     flex: content;
-    
+    padding-bottom: 25px;
     justify-content:center;
 
     
 }
+
+
 
 body {
     background-color:rgb(247, 247, 247);
